@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,150;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--light-grey); 
+}
+::-webkit-scrollbar-thumb {
+    background:transparent; 
+}
+:root {
+    --bright-white:#fff;
+    --dark-white:#F5F5F5 ;
+    --dark-grey:#A9A9A9;
+    --light-grey:#D3D3D3;
+    --dark-black:#000;
+    --light-black: #383838;
+    --light-red:#FF0000 ;
+    --dark-red:#900000 ;
+    --dark-green:#006600;
+    --light-green:#00FF00;
+    --green:#009900;
+
+
+/* banner header color */
+    --blue:#ADD8E6;
+    --orange:#dd6a0c ;
+    --yellow:#b9e714;
+    --pink:#c54a83;
+    --dark-black:#000;
+    --light-black: #383838;
+    --light-red:#FF0000 ;
+    --dark-red:#900000 ;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+body {
+    font-family:'Poppins',sans-serif;
+    background: var(--bright-white);
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    padding: 20px;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--dark-green);
+    color: var(--bright-white);
+}
+.header .left {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+.header .left i {
+    margin-right: 10px;
+}
+
+.header .middle {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.header .middle a {
+    margin: 0 12px;
+    font-weight: 600;
+}
+.middle a:hover {
+    color: var(--light-red);
+}
+.header .right {
+    margin-right: 20px;
+    align-items: center;
+}
+.header .right i {
+    font-size: 20px;
+    margin:0 12px;
+}
+.header .right .user{
+    font-size: 33px;
+    align-self:center;
+}
+.header .right i:hover {
+    color: var(--light-red);
+}
+
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 20px;
+    margin-top: 60px;
+}
+.account-container .account-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: flex-start;
+    top: 60px;
+    position: sticky;
+    background: var(--bright-white);
+}
+.account-info .profile-menu {
+    width: 100%;
+}
+.profile-menu nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #F0F0F0;
+}
+nav li {
+    list-style: none;
+    margin-right: 25px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+nav li a {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+nav li:hover {
+    background:var(--light-black);
+    color: var(--bright-white);
+}
+nav li i{
+    margin-right: 12px;
+    align-self: center;
+}
+li:active {
+    background:var(--light-black);
+    color: var(--bright-white);
+}
+
+
+.account-viewer {
+    width: 100%;
+    height: 100%;
+    display:block;
+    align-self: center;
+    justify-self: flex-start;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+.account-viewer .submit {
+    width: auto;
+    padding: 4px 8px;
+    background: var(--dark-red);
+    color: var(--bright-white);
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+/* General Settings */
+.account-viewer .general-preview {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+.general-preview .profile-picture {
+    height: 180px;
+    display: block;
+    margin-right: 50px;
+    align-self: flex-start;
+}
+.general-preview .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.profile-picture form button {
+    margin-left: 25px;
+    bottom:50px;
+    height: 30px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-grey);
+    background: var(--bright-white);
+}
+.general-preview form {
+    align-self: flex-start;
+    width: 50%;
+}
+.general-preview form p {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.general-preview form input , textarea{
+    padding: 7px;
+    width: 60%;
+    color: var(--dark-black);
+    font-size: 15px;
+    font-weight:600;
+}
+textarea {
+    resize: none;
+}
+.general-preview input::placeholder , textarea::placeholder {
+    color: var(--light-black);
+}
+.general-preview .submit {
+    width: auto;
+    padding: 4px 8px;
+    background: var(--dark-red);
+    color: var(--bright-white);
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+/*  Downloads area */
+.account-viewer .downloads-preview {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+}
+.downloads-preview div:first-child {
+    justify-self: flex-start;
+}
+.downloads-preview .all-downloads {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    justify-self: flex-start;
+    margin-top: 10px;
+}
+.all-downloads .box {
+    margin: 20px;
+}
+.all-downloads .box a{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    background: #F0F0F0;
+    border-radius: 25px;
+}
+.all-downloads .item {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: relative;
+}
+.all-downloads .box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    margin-right: 6px;
+}
+.item .title {
+    align-self: flex-start;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.item .price{
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* carts section */
+.account-viewer .my-cart {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding-bottom: 20px;
+}
+.my-cart .box a{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    background: #F0F0F0;
+    border-radius: 25px;
+    margin: 10px;
+}
+.my-cart .item {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: relative;
+}
+.my-cart .box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    margin-right: 6px;
+}
+.item .title {
+    align-self: flex-start;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.item .price{
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* payment section */
+.payment-preview {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.payment-preview p {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.payment-preview select {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.payment-preview input{
+    padding: 4px 8px;
+}
+
+/* settings */
+.settings {
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+}
+.settings p {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.settings input{
+    padding: 4px 8px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    body {
+        overflow-y:scroll;
+        width: 100%;
+        height: 100%;
+    }
+    .header {
+        padding:5px;
+        margin: 0;
+        overflow: hidden;
+        position: sticky;
+        top:0;
+        left: 0;
+        right: 0;
+    }
+    .header .left b{
+        font-size: 12px;
+    }
+    .header .left i {
+        display: block;
+    }
+    .header .middle {
+        display: none;
+    }
+    .header .right .fa-search {
+        display: block;
+    }
+    .header .fa-user-circle , .header .fa-bag-shopping , .header .fa-heart{
+        display: none;
+    }
+    .account-container {
+        padding: 5px;
+        margin-top: 0px;
+    }
+
+    .profile-menu nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-self: center;
+        justify-content: flex-start;
+        background: #F0F0F0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    nav li {
+        list-style: none;
+        margin-right: 12px;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    nav li a {
+        display: flex;
+        align-self: center;
+        justify-self:flex-start;
+    }
+
+    .account-viewer {
+        width: 100%;
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 5;
+        overflow-x: scroll;
+    }
+    .account-viewer .general-preview {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    /* General Settings */
+    .account-viewer .general-preview  {
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .general-preview .profile-picture {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+    .general-preview .profile-picture img {
+       width: 100px;
+       height: 100px;
+    }
+    .general-preview .user-info {
+        width: 100%;
+    }
+
+
+    /*  Downloads area */
+.downloads-preview .all-downloads {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+.all-downloads .box {
+    margin: 10px;
+}
+
+
+/* carts section */
+.account-viewer .my-cart {
+    flex-wrap: nowrap;
+}
+
+    
+}

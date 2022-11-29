@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background:transparent; 
+}
+:root {
+    --bright-white:#fff;
+    --dark-white:#F5F5F5 ;
+    --dark-grey:#A9A9A9;
+    --light-grey:#D3D3D3;
+    --dark-black:#000;
+    --light-black: #383838;
+    --light-red:#FF0000 ;
+    --dark-red:#900000 ;
+    --dark-green:#006600;
+    --light-green:#00FF00;
+    --green:#009900;
+
+
+/* banner header color */
+    --blue:#ADD8E6;
+    --orange:#dd6a0c ;
+    --yellow:#b9e714;
+    --pink:#c54a83;
+    --dark-black:#000;
+    --light-black: #383838;
+    --light-red:#FF0000 ;
+    --dark-red:#900000 ;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+    background: transparent;
+}
+del {
+    text-decoration: line-through;
+    color: var(--light-black);
+    font-size: 16px;
+}
+body {
+    font-family:'Poppins',sans-serif;
+    background: var(--bright-white);
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+/* header section */
+.top-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}/*
+.top-header img{
+    width: 50%;/*
+    height: 150px; 
+} */
+.header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    padding: 20px 60px;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--dark-green);
+    color: var(--bright-white);
+    z-index: 100;
+}
+.header .left {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+.header .left i {
+    margin-right: 10px;
+}
+
+.header .middle {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.header .middle a {
+    margin: 0 12px;
+    font-weight: 600;
+}
+.middle a:hover {
+    color: var(--light-red);
+}
+.header .right a{
+    align-self: center;
+    margin-left: 15px;
+}
+.header .right i {
+    font-size: 20px;
+}
+.header .right .user{
+    font-size: 33px;
+    align-self:center;
+}
+.right a.rel{
+    align-self: center;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+.header .right .badge {
+    position: absolute;
+    background: var(--light-red);
+    color: var(--dark-white);
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -12px;
+    font-weight: 800;
+    font-size: 11px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* body section */
+
+.setbooks-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 60px;
+    padding: 10px 60px 0px 60px ;
+    display:block;
+    align-items: flex-start;
+    justify-content:space-between;
+    background: var(--light-grey);
+}
+/* product categories */
+
+.setbooks-container .product-categories {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.product-categories .product-header {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bright-white);
+    border-radius: 5px;
+}
+.setbooks-category .setbooks-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:flex-start;
+    background: var(--bright-white);
+    border-radius: 5px;
+}
+.setbooks-category .setbooks-area .setbooks-list a{
+    width: 170px;
+    padding: 5px;
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 15px;
+}
+.setbooks-category .setbooks-area .setbooks-list a:hover {
+    box-shadow: 0 0 5px 1px var(--dark-grey);
+    border-radius: 5px;
+}
+.setbooks-area .setbooks-list img {
+    width: 160px;
+    height: 160px;
+}
+
+.setbooks-area .setbooks-list div.product-title {
+    width: 100%;
+    text-transform:capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.setbooks-list .price {
+    font-size: 22px;
+}
+
+/* desktop-footer */
+.desktop-footer {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 60px 20px;
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:var(--dark-black);
+    color: var(--bright-white);
+    border-radius: 5px;
+}
+/* top footer */
+.desktop-footer .top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.top .cols-1 {
+    display: block;
+    align-self: flex-start;
+    width: 20%;
+    color: var(--dark-grey);
+}
+.top .cols-1 b {
+    color: var(--bright-white);
+}
+.top .cols-1 a:hover{
+    color: var(--dark-white);
+    margin-left: 20px;
+}
+.top .cols-1 img:hover {
+    margin-left: -20px;
+}
+/* down footer */
+.desktop-footer .down {
+    margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    body {
+        overflow-y:scroll;
+        width: 100%;
+        height: 100%;
+    }
+    /* header section */
+    .header {
+        padding:5px;
+        margin: 0;
+        overflow: hidden;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .header .left b{
+        font-size: 16px;
+    }
+    .header .left i {
+        display: block;
+    }
+    .header .middle {
+        display: none;
+    }
+    .header .right .fa-basket , .right .user {
+        display: none;
+    }
+    .header .right .rel {
+        display: none;
+    }
+
+    /* setbooks container */ 
+    .setbooks-container {
+        height: 100%;
+        padding: 0;
+        margin-top: 60px;
+    }
+    .setbooks-container .setbooks-category {
+        width: 100%;
+    }
+    .setbooks-category .product-header {
+        width: 100%;
+    }
+    .setbooks-category .setbooks-area .setbooks-list a{
+        width: 180px;
+        margin: 10px;
+    }
+    .setbooks-area .setbooks-list img {
+        width: 170px;
+        height: 160px;
+    }
+
+
+
+    /* desktop footer */
+    .desktop-footer {
+        display: none;
+    }
+
+}/* end of index.html */

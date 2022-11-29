@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="2aC-XNDxHC-SyqjCr3ZGsyORYk0HASpci2mvcAQkbuA" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <meta name="description" content="Kenya Book Store , Welcome to the home of KCSE Revision Materials & Answers all in one area. In this platform you can read & request all the KCSE Revision Notes & Setbooks Guide and questions in PDF format.
+
+    We are giving out FREE teaching and learning materials to help students revise for their exams adequately. You will find schemes of work, notes, and revision papers touching on all subjects in the Kenyan secondary school curriculum up to date">
+    <meta name="keywords" content="KCSE Revision Materials , seconday notes , setbooks notes , CBC GRADE 4 , CBC Grade 5 , CBC Grade 6 , kcse past papers , kcpe past papers">
+    <meta name="author" content="Abraham Omondi">
+    <meta http-equiv="refresh" content="">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7793339219.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Book Store </title>
+</head>
+<body>
+    <!-- header section -->
+    <div class="top-header">
+        <img src=""oncontextmenu="return false">
+    </div>
+    <div class="header">
+        <div class="left">
+            <i class="fa fa-bars" title="Menu" onclick="show()"></i>
+            <b><a href="./index.html">KENYA BOOK STORE</a></b>
+        </div>
+        <div class="middle">
+            <a href="/shop/index.html">Shop</a>
+            <a href="/payments.html">Payment</a>
+            <a href="/about-us.html">About Us</a>
+            <a href="/contact-us.html">Contact Us</a>
+        </div>
+        <div class="right">
+            <a><i class="fa fa-search" title="Search For Revision Materials"></i></a>
+            <a href="wishlist.php"class="rel"><i class="far fa-heart" title="My Wishlist"></i></a>
+            <a href="/checkout.html" class="rel"><i class="fa fa-bag-shopping" title="Basket"></i><span class="badge">1</span></a>
+            <a href="/account/signup.html"><i class="far fa-user-circle user" title="My Account"></i></a>
+        </div>
+    </div>
+
+    <!-- homepage container section-->
+    <div class="body-container">
+        <div class="horizontal-view">
+            <div class="sidebar-left">
+                <b><i class="fa fa-list"></i> &nbsp;CATEGORIES</b><br>
+                <a href="./profile/product-profile.html"><i class="fa-solid fa-chalkboard-user"></i> KCSE Past Papers</a>
+                <a href="./profile/notes-profile.html"><i class="fa-solid fa-book-open-reader"></i> Secondary Notes</a>
+                <a href="./profile/notes-profile.html"><i class="fa-solid fa-chalkboard-user"></i> Topical Questions</a>
+                <a href="/setbooks/video/setbook-videos.html"><i class="fa-solid fa-video"></i> Setbooks Videos</a>
+                <a href="./setbooks/setbooks-notes.html"><i class="fa-solid fa-book-open-reader"></i> Setbooks Guide</a>
+                <a href="./product/pastpapers-page.html"><i class="fa-solid fa-chalkboard-user"></i> KCSE Mock Papers</a>
+                <a href="./profile/notes-profile.html"><i class="fa-solid fa-list"></i> Lessons Plan</a>
+                <a href="./profile/notes-profile.html"><i class="fa-solid fa-grip"></i> Scheme of Works</a>
+            </div>
+            <div class="tv-section"oncontextmenu="return false">
+                <video id="my_video_1"poster="./images/banner-ad.gif" title="Elimu TV Livestream" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"data-setup='{}'loop>
+                    <source src="http://41.139.152.73/live/3013.m3u8" type="application/x-mpegURL">
+                </video>
+            </div>
+            <div class="sidebar-right">
+                <b><i class="fa-solid fa-earth-africa"></i> &nbsp;EXAM TIMETABLE</b>
+                <a href="https://knec.ac.ke/wp-content/uploads/2022/05/2022-KCSE-Timetable-Final.pdf"download><i class="fa-solid fa-angles-right"></i> KCSE TimeTable</a>
+                <a href="https://knec.ac.ke/wp-content/uploads/2022/05/2022-KCPE-Timetable-Final.pdf"download><i class="fa-solid fa-angles-right"></i> KCPE TimeTable</a>
+                <a href="https://www.newsyetu.com/wp-content/uploads/2022/05/2022-KPSEA-TIMETABLE-Final-1.pdf"download><i class="fa-solid fa-angles-right"></i> Grade 6 TimeTable</a>
+                <p>
+                   <b><i class="fa-solid fa-graduation-cap"></i> &nbsp;CBC CURRICULUM</b>
+                   <a href="./profile/product-profile.html"><i class="fa-solid fa-book-open-reader"></i> KCPE Past Papers</a>
+                   <a href="./profile/notes-profile.html"><i class="fa-solid fa-book-open-reader"></i> Grade 1 - 6 Notes</a>
+                   <a href="./profile/notes-profile.html"><i class="fa-solid fa-book-open-reader"></i> Lessons Plan</a>
+                   <a href="./profile/notes-profile.html"><i class="fa-solid fa-book-open-reader"></i> Scheme of Works</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="product-categories flash-sales">
+            <div class="product-header"style="background:#e61601;color:white;">
+                <h2><i class="fa fa-bolt fa-bounce"style="color:yellow;"></i> Flash Sales</h2>
+                <div class="time-left">
+                    <b>Time left:&nbsp;<span id="demo"style="font-weight:400;"></span></b>
+                </div>
+                <a href="#"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./product/notes-page.html">
+                    <img src="./images/notes.jpg"oncontextmenu="return false">
+                    <span class="discount">20%</span>
+                    <div>
+                        <span class="product-title">Biology Form 1 Notes</span><br>
+                        <b class="price">Ksh.80</b>&nbsp;
+                        <del>Ksh.100</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">30%</span>
+                     <div>
+                         <span class="product-title">KCSE 2020 English paper 1</span><br>
+                         <b class="price">Ksh.100</b>&nbsp;
+                         <del>Ksh.130</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./setbooks/single-setbook.html">
+                     <img src="./images/blossoms.jpg"oncontextmenu="return false">
+                     <span class="discount">34%</span>
+                     <div>
+                         <span class="product-title">Blossoms Of The savannah guide</span><br>
+                         <b class="price">Ksh.70</b>&nbsp;
+                         <del>Ksh.120</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa fa-star"style="color:red;"></i> NEW ARRIVALS</h2>
+                <a href="#"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./product/notes-page.html">
+                    <img src="./images/notes.jpg"oncontextmenu="return false">
+                    <!-- <span class="discount">20%</span> -->
+                    <div>
+                        <span class="product-title">Biology Form 1 Notes</span><br>
+                        <b class="price">Ksh.80</b>&nbsp;
+                        <!-- <del>Ksh.100</del> -->
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa-solid fa-book-open-reader"></i> SECONDARY NOTES</h2>
+                <a href="./profile/notes-profile.html"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./product/notes-page.html">
+                    <img src="./images/form1-notes.jpg"oncontextmenu="return false">
+                    <span class="discount">20%</span>
+                    <div>
+                        <span class="product-title">Biology Form 1 Notes</span><br>
+                        <b class="price">Ksh.60</b>&nbsp;
+                        <del>Ksh.80</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/form2-notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 2 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/form3-notes.jpg"oncontextmenu="return false">
+                     <span class="discount">25%</span>
+                     <div>
+                         <span class="product-title">Biology Form 3 Notes</span><br>
+                         <b class="price">Ksh.90</b>&nbsp;
+                         <del>Ksh.110</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/form4-notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Chemistry Form 4 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/form2-notes.png"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/notes-page.html">
+                     <img src="./images/form1-notes.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Biology Form 1 Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa-solid fa-book-open-reader"></i> KCSE PAST PAPERS</h2>
+                <a href="/profile/pastpapers-profile.html"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./product/pastpapers-page.html">
+                    <img src="./images/kcse.png"oncontextmenu="return false">
+                    <span class="discount">9%</span>
+                    <div>
+                        <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                        <b class="price">Ksh.60</b>&nbsp;
+                        <del>Ksh.90</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/pastpapers-page.html">
+                     <img src="./images/kcse.png"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa-solid fa-book-open-reader"></i> KCSE PREDICTION PAPERS</h2>
+                <a href="/profile/pastpapers-profile.html"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./product/prediction-papers.html">
+                    <img src="./images/kcse-prediction.jpg"oncontextmenu="return false">
+                    <span class="discount">9%</span>
+                    <div>
+                        <span class="product-title">KCSE 2021 English Prediction Paper 1 Questions</span><br>
+                        <b class="price">Ksh.60</b>&nbsp;
+                        <del>Ksh.90</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./product/prediction-papers.html">
+                     <img src="./images/kcse-prediction.jpg"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Prediction Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                 <div class="items">
+                    <a href="./product/prediction-papers.html">
+                     <img src="./images/kcse-prediction.jpg"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Prediction Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                 <div class="items">
+                    <a href="./product/prediction-papers.html">
+                     <img src="./images/kcse-prediction.jpg"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCSE 2021 English Prediction Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>                
+           </div>
+        </div>
+
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa-solid fa-book-open-reader"></i> KCSE SETBOOKS GUIDE</h2>
+                <a href="./setbooks/setbooks-notes.html"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./setbooks/single-setbook.html">
+                    <img src="./images/blossoms.jpg"oncontextmenu="return false">
+                    <!-- <span class="discount">9%</span> -->
+                    <div>
+                        <span class="product-title">Blossoms Of The Savannah</span><br>
+                        <b class="price">Ksh.60</b>&nbsp;
+                        <del>Ksh.90</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./setbooks/single-setbook.html">
+                     <img src="./images/blossoms.jpg"oncontextmenu="return false">
+                     <!-- <span class="discount">9%</span> -->
+                     <div>
+                         <span class="product-title">Blossoms Of The Savannah</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./setbooks/single-setbook.html">
+                     <img src="./images/blossoms.jpg"oncontextmenu="return false">
+                     <!-- <span class="discount">9%</span> -->
+                     <div>
+                         <span class="product-title">Blossoms Of The Savannah</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>            
+           </div>
+        </div>
+
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa-solid fa-book-open-reader"></i> KCPE PAST PAPERS</h2>
+                <a href="/profile/kcpe-profile.html"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./product/kcpe-papers.html">
+                    <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                    <span class="discount">9%</span>
+                    <div>
+                        <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                        <b class="price">Ksh.60</b>&nbsp;
+                        <del>Ksh.90</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./product/kcpe-papers.html">
+                     <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                     <span class="discount">39%</span>
+                     <div>
+                         <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/kcpe-papers.html">
+                     <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                     <span class="discount">21%</span>
+                     <div>
+                         <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/kcpe-papers.html">
+                     <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                     <span class="discount">17%</span>
+                     <div>
+                         <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/kcpe-papers.html">
+                     <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/kcpe-papers.html">
+                     <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./product/kcpe-papers.html">
+                     <img src="./images/kcpe.jpg"oncontextmenu="return false">
+                     <span class="discount">9%</span>
+                     <div>
+                         <span class="product-title">KCPE 2021 English Paper 1 Questions</span><br>
+                         <b class="price">Ksh.60</b>&nbsp;
+                         <del>Ksh.90</del>
+                     </div>
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+        <div class="product-categories">
+            <div class="product-header">
+                <h2><i class="fa-solid fa-book-open-reader"></i> CBC GRADE 1-6</h2>
+                <a href="./cbc/notes.html"><b>SEE MORE ></b></a>
+            </div>
+            <div class="container">
+                <div class="items">
+                   <a href="./cbc/single-notes.html">
+                    <img src="./images/pp1.png"oncontextmenu="return false">
+                    <span class="discount">20%</span>
+                    <div>
+                        <span class="product-title">Grade 4 Maths Questions</span><br>
+                        <b class="price">Ksh.50</b>&nbsp;
+                        <del>Ksh.100</del>
+                    </div>
+                   </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp5.png"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Grade 6 English Notes</span><br>
+                         <b class="price">Ksh.40</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp5.png"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Grade 5 Science Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp3.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Grade 4 Maths Answers</span><br>
+                         <b class="price">Ksh.50</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp5.png"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Grade 4 Maths Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp2.png"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Grade 4 Maths Notes</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp3.jpg"oncontextmenu="return false">
+                     <span class="discount">20%</span>
+                     <div>
+                         <span class="product-title">Grade 4 Lesson Plans</span><br>
+                         <b class="price">Ksh.80</b>&nbsp;
+                         <del>Ksh.100</del>
+                     </div>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="./cbc/single-notes.html">
+                     <img src="./images/pp2.png"oncontextmenu="return false">
+                     <!-- <span class="discount">20%</span> -->
+                        <div>
+                            <span class="product-title">Grade 4 Maths Notes</span><br>
+                            <b class="price">Ksh.80</b>&nbsp;
+                            <!-- <del>Ksh.100</del> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- desktop footer ---->
+        <div class="desktop-footer">
+            <div class="top">
+                <div class="cols-1">
+                    <b>ABOUT KENYA BOOKSTORE</b><br>
+                    <p>
+                        <a href="/about-us.html"><i class="fa fa-question-circle"></i> &nbsp;About Us</a><br>
+                        <a href="/contact-us.html"><i class="fa fa-phone"></i> &nbsp;Contact Us</a><br>
+                    </p><br>
+                    <p>
+                        <a href="https://play.google.com/store/apps/dev?id=8645365613734548585&hl=en&gl=US"><img src="./images/playstore.jpg" alt="playstore"width="200px"style="img:hover:margin-left:0;"></a><br>
+                    </p>
+                </div>
+                <div class="cols-1">
+                    <b>SELL YOUR PRODUCTS</b><br>
+                    <p>
+                        <a href="/seller/dashboard.html"><i class="fa fa-arrow-pointer"></i>  &nbsp;&nbsp;&nbsp;Seller Dashboard</a><br>
+                        <a href="/seller/seller-agreement"><i class="fa fa-circle-exclamation"></i> &nbsp;Terms & Condition</a><br>
+                        <a href="/seller/payment-agreement.html"><i class="fa fa-hand-holding-dollar"></i> &nbsp;Payment Agreement</a><br>
+                    </p>
+                </div>
+                <div class="cols-1">
+                    <b>MY ACCOUNT</b><br>
+                    <p>
+                        <a href="/account/account.html"><i class="fa fa-user"></i> &nbsp;&nbsp;My Profile</a><br>
+                        <a href="/checkout.html"><i class="fa fa-bag-shopping"></i> &nbsp;&nbsp;My Cart</a><br>
+                        <a href="/account/account.html"><i class="fa fa-download"></i> &nbsp;My Downlads</a><br>
+                        <a href="/payments.html"><i class="fa fa-money"></i> &nbsp;Payment Methods</a><br>
+                    </p>
+                </div>
+                <div class="cols-1">
+                    <b>FOLLOW US ON</b><br>
+                    <p>
+                        <a href="https://m.facebook.com/KCSE-Revision-BOOKS-Apps-102277268748093/"><i class="fa fa-facebook"style="color: blue;"></i> &nbsp;&nbsp;&nbsp;Facebook</a><br>
+                        <a href="#"><i class="fa fa-twitter"style="color:  #00acee;"></i> &nbsp;Twitter</a><br>
+                        <a href="#"><i class="fa-brands fa-whatsapp-square"style="color:var(--light-green);"></i> &nbsp;&nbsp;Whatsapp</a><br>
+                        <a href="#"><i class="fa fa-instagram"style="color:#E1306C"></i> &nbsp;&nbsp;Instagram</a><br>
+                    </p>
+                </div>
+            </div>
+            <div class="down">
+               &copy; 2022 Kenya Book Store
+            </div>
+        </div>
+    </div><!-- end of product section & footer-->
+
+
+
+
+
+    <!--video player -->
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
+    <!-- count-down-->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("July 30, 2022 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+    </script>
+
+    <!--mobile footer section-->
+    <div class="mobile-footer"style="display:none;">
+        <a href="/checkout.html"><i class="fa fa-home" title="Home"></i></a>
+        <a href="/shop/index.html"><i class="fa fa-store" title="shop"></i></a>
+        <a href="/checkout.html"><i class="far fa-heart" title="My Wishlist"></i></a>
+        <a href="/account/signup.html"><i class="far fa-user-circle" title="My Account"></i></a>
+    </div>
+
+</body>
+</html>

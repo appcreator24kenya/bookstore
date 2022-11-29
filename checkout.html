@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <meta name="description" content="Kenya Book Store , Welcome to the home of KCSE Revision Materials & Answers all in one area. In this platform you can read & request all the KCSE Revision Notes & Setbooks Guide and questions in PDF format.
+
+    We are giving out FREE teaching and learning materials to help students revise for their exams adequately. You will find schemes of work, notes, and revision papers touching on all subjects in the Kenyan secondary school curriculum up to date">
+    <meta name="keywords" content="KCSE Revision Materials , seconday notes , setbooks notes , CBC GRADE 4 , CBC Grade 5 , CBC Grade 6 , kcse past papers , kcpe past papers">
+    <meta name="author" content="Abraham Omondi">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://kit.fontawesome.com/7793339219.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Kenya Book Store</title>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <i class="fa fa-bars" title="Menu" onclick="show()"></i>
+            <b><a href="/index.html">KENYA BOOK STORE</a></b>
+        </div>
+        <div class="middle">
+            <a href="/shop/index.html">Shop</a>
+            <a href="/payments.html">Payment</a>
+            <a href="/about-us.html">About Us</a>
+            <a href="/contact-us.html">Contact Us</a>
+        </div>
+        <div class="right">
+            <i class="fa fa-search" title="Search For Revision Materials"></i>
+            <a href="/checkout.html"><i class="fa fa-bag-shopping" title="Basket"></i></a>
+            <a href="/account/account.html"><i class="far fa-user-circle user" title="My Account"></i></a>
+        </div>
+    </div>
+
+
+    <div class="body-container">
+        <div class="order-lists">
+            <b>Order Details</b>
+            <table>
+                <tr class="heading">
+                    <th>Icons</th>
+                    <th>Product Names</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><img src="/images/kcse-profile.jpg" alt=""></td>
+                    <td>KCSE 2021 Past Papers</td>
+                    <td><b>Ksh.130</b></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/kcse-profile.jpg" alt=""></td>
+                    <td>KCSE 2021 Past Papers</td>
+                    <td><b>Ksh.130</b></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/kcse-profile.jpg" alt=""></td>
+                    <td>KCSE 2021 Past Papers</td>
+                    <td><b>Ksh.130</b></td>
+                </tr>
+            </table>
+            <div class="delivery-info">
+                <b>Delivery Information</b>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Enter your Firstname" id=""required>
+                    <input type="text" placeholder="Enter your Lastname" id=""required>
+                    <input type="tel" placeholder="Enter Phone number"title="eg. 0712345678 or 0112345678"required>
+                    <input type="text"placeholder="Enter your address"required><br>
+                    <button type="submit"><b>Save & Continue</b></button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="payment-page">
+            <div class="total-price">
+                <b>Total Price</b>
+                <table>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td><input type="number"placeholder=" 3 " max="100"></td>
+                        <td>130</td>
+                        <td><b>Ksh.390</b></td>
+                    </tr>
+                </table>
+                <div class="pay-btn">
+                       <button type="submit"id="submit">Checkout</button>
+                       <b>Ksh.390</b>
+                </div>
+            </div>
+            <h3>Choose Payment method</h3>
+            <div class="payment-methods">
+                <div class="mpesa ">
+                    <div class="toggle-payment">
+                        <b>Pay with M-PESA</b>
+                        <input type="radio"name="radio" class="checkbox"onclick="show()">
+                    </div>
+                    <div class="payment-instructions"id="hide">
+                        <form action="#" method="post">
+                            <input type="tel" placeholder="mpesa number"class="tel">
+                            <input type="submit" value="PAY">
+                        </form>
+                    </div>
+                </div>
+                <div class="paypal">
+                    <div class="toggle-payment">
+                        <b>Pay with PAYPAL</b>
+                        <input type="radio"name="radio" class="checkbox"onclick="show()">
+                    </div>
+                    <div class="payment-instructions"id="hide2">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="52RNMP8MD5NWQ">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form> 
+                    </div>
+                </div>
+            </div>                    
+        </div>
+    </div>
+</body>
+</html>
